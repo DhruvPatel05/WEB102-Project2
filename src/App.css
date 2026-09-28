@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.App h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.App h2 {
+  margin: 10px 0;
+}
+
+.App p {
+  font-size: 18px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.flashcard {
+  width: 500px;
+  height: 280px;
+  margin: 40px auto 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+  box-sizing: border-box;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.flashcard:hover {
+  transform: scale(1.03);
+}
+
+.flashcard h2 {
+  font-size: 28px;
+  color: #222;
+}
+.next-button {
+  margin-top: 15px;
+  padding: 14px 28px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #2563eb;
+  color: white;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.next-button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+.flashcard.easy {
+  background-color: #dcfce7;
+}
+
+.flashcard.medium {
+  background-color: #fef9c3;
+}
+
+.flashcard.hard {
+  background-color: #fee2e2;
+}
+
+.difficulty {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 15px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.flip-hint {
+  margin-top: 25px !important;
+  font-size: 14px !important;
+  color: #777 !important;
+}
+.card-image {
+  display: block;
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto 12px;
+}
